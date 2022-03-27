@@ -80,5 +80,6 @@ for candidate_name in candidate_votes:
 
 - Diana DeGette won the election with a vote count of 272,892, which is 73.8% of the total votes
 
+After running the code, the election results were printed on the terminal. An image of the results on the terminal can be seen in a png file in the analysis folder. Additionally, the election results were also printed on a txt file, also found in the analysis folder of this repository.
 
 ## Election-Audit Summary
