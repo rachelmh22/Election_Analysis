@@ -82,4 +82,13 @@ for candidate_name in candidate_votes:
 
 After running the code, the election results were printed on the terminal. An image of the results on the terminal can be seen in a png file in the analysis folder. Additionally, the election results were also printed on a txt file, also found in the analysis folder of this repository.
 
+
 ## Election-Audit Summary
+
+As seen by the analysis and results, this script is able to provide an efficient way to analyze the data associated with this election. With some modifications, the election commission can use this script for any election in the future. The script essentially reads the data from a CSV file, counts the votes, lists the candidates, divide the votes by number and percentage to each candidate and announces the winner, and the same is done regarding the counties. Since this is the foundation of what the script does, the specifics (such as the exact number of votes, who the candidates, the number of counties or candidates) can be modified to fit any election since the script will adjust based on the data.
+
+Examples of how the script might be modified are:
+
+1. If this was a federal election, there might be a column in the election data that lists the votes for each state. The script can be modified to add state vote results by adding a for loop to go through the state data and count the votes received. This would be similar to the for loops that counted the candidate votes and county votes
+
+2. If we wanted to look at the number of votes a candidate received in each county, we could modify the script by adding a nested for loop. We would add a nested for loop in the for loop iterates that county votes. This is if we wanted to go into more detail to see which candidate a county supported most. This could also be applied to a federal election, where we use nested for loops to iterate through the states, then iterate through candidates to see which candidate received the most votes in a given state.
