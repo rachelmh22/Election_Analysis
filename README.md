@@ -11,18 +11,18 @@ The purpose of this project is to audit the election results for US congressiona
 ## Election-Audit Results 
 
 - There was a total of 369,711 votes cast in this congressional election. The following code allowed us to get the total votes by initializing the total vote count to 0 then using a for loop to go through the election data and add a vote to the total count for each vote in the data.
-‘’’
+```
 total_votes = 0
 …
 for row in reader: 
 	total_votes = total_votes + 1
-‘’’
+```
 
 - The following is a breakdown of the number of votes and the percentage of votes for each county, as well as the code used to get these results:
    - Jefferson county received 38,855 votes, which is 10.5% of the total votes
    - Denver county received 306,055 votes, which is 82.8% of the total votes
    - Arapahoe county received 24,801 votes, which is 6.7% of the total votes
-‘’’
+```
 county_options = []
 county_votes = {}
 …
@@ -45,7 +45,7 @@ for county_name in county_votes:
 		winning_county_count = votes
 		winning_county_percentage = vote_percentage
 		winning_county = county_name
-‘’’
+```
 
 - Denver county had the largest number of votes
 
@@ -53,7 +53,7 @@ for county_name in county_votes:
    - Charles Casper Stockham received 85,213 votes, which is 23.0% of the total votes
    - Diana DeGette received 272,892 votes, which is 73.8% of the total votes
    - Raymon Anthony Doane received 11,606 votes, which is 3.1% of the total votes
-‘’’
+```
 candidate_options = []
 candidate_votes = {}
 …
@@ -76,7 +76,7 @@ for candidate_name in candidate_votes:
 		winning_count = votes
 		winning_candidate = candidate_name
 		winning_percentage = vote_percentage
-‘’’
+```
 
 - Diana DeGette won the election with a vote count of 272,892, which is 73.8% of the total votes
 
